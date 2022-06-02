@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+<div id="inChat">
+    <mat-list class = "cards">
+        <mat-list-item *ngFor = "let user of getOnline()" class ="card">
+            <a>{{user.username}}</a>
+        </mat-list-item>
+    </mat-list>
+    <mat-list class = "cards">
+        <mat-list-item *ngFor = "let user of getOffline()" class ="offCard">
+            <a>{{user.username}}</a>
+        </mat-list-item>
+    </mat-list>
+</div>
+
+<div id = "chatBox" style="margin-left: 4px;">
+    <p id = "messageLog">Server: Works Text</p>
+    <div id = "inputBox">
+        <mat-form-field style = "width: 75%; margin-left: 30px;" appearance="fill">
+            <input  type = "text" id = "chatBar" matInput [(ngModel)] = "chatLog">
+        </mat-form-field>
+        <button id = "send" mat-button (click) = "sendMessage()" >Send</button>
+    </div>
+</div>

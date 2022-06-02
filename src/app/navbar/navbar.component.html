@@ -1,0 +1,9 @@
+<div class="navbar">
+    <a id = "home" class="active" href="#" (click) = 'makeActive("home")'>The Group Chat</a>
+    <a id = "about" [routerLink] = "['/messages']">Message</a>
+    <a id = "services" [routerLink] = "['/login']"  (click) = 'makeActive("services")'>Services</a>
+    <div class = logOutDiv>
+        <button id ="logOut" class ="buttons" mat-raised-button color = "accent" (click) = "logOut()">Log Out</button>
+    </div>
+
+</div>

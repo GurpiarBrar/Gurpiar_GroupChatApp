@@ -1,0 +1,5 @@
+{
+
+    "/ChatLogs/:roomId": "/posts?roomId=:roomId"
+
+}
