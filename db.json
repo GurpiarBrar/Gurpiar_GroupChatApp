@@ -1,0 +1,43 @@
+{
+  "ChatLogs": [
+    {
+      "id": 1,
+      "messages": [
+        "Gurpiar: Hi",
+        "Aaron: Hello",
+        "Aaron: What's Up",
+        "Mahdi: Doing good",
+        "Gurpiar: Hi"
+      ]
+    }
+  ],
+  "Users": [
+    {
+      "id": 1,
+      "username": "Gurpiar",
+      "password": "1234",
+      "online": true
+    },
+    {
+      "id": 2,
+      "username": "Aaron",
+      "password": "Aaron",
+      "online": false
+    },
+    {
+      "id": 3,
+      "username": "Mahdi",
+      "password": "Aaron",
+      "online": true
+    },
+    {
+      "id": 4,
+      "username": "Kruti",
+      "password": "Aaron",
+      "online": true
+    }
+  ],
+  "Next": {
+    "id": 5
+  }
+}
