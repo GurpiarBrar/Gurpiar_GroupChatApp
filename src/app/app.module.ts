@@ -36,8 +36,7 @@ import { ChatComponent } from './chat/chat.component';
     MatListModule,
     RouterModule.forRoot([
       {path: 'login', component: LoginComponent},
-      {path: 'messages', component: ChatComponent},
-      {path: '', redirectTo: "login", pathMatch: 'full'},
+      {path: 'messages', component: ChatComponent}
     ])
   ],
   providers: [],
