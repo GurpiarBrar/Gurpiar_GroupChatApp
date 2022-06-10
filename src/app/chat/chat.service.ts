@@ -8,7 +8,7 @@ import { IChatLog } from "./chatLog";
     providedIn: 'root'
 })
 export class ChatService {
-    private baseURL = 'http://localhost:3000/';
+    private baseURL = 'https://my-json-server.typicode.com/GurpiarBrar/Gurpiar_GroupChatApp/';
     private allChats!: IChatLog[];
     private newRoomID: number = 3;
 

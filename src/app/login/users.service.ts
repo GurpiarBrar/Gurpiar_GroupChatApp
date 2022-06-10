@@ -7,7 +7,7 @@ import { Iuser } from "./user";
     providedIn: 'root'
 })
 export class UsersService {
-    private baseURL = 'http://localhost:3000/';
+    private baseURL = 'https://my-json-server.typicode.com/GurpiarBrar/Gurpiar_GroupChatApp/';
     private allUsers!: Iuser[];
     constructor(private http: HttpClient){
         setInterval(()=>{this.update()},2500)

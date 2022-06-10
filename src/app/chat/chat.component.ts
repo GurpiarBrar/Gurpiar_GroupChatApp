@@ -89,7 +89,9 @@ export class ChatComponent implements OnInit, OnDestroy {
       this.chatRoom = data;
     });
     this.chatLog = "";
-    //this.update();
   } 
 
 }
+
+
+
