@@ -44,7 +44,8 @@ export class LoginComponent implements OnInit {
     }
     if(this.users.addUser(this.username, this.password)){
       sessionStorage.setItem('name', this.username)
-      window.location.href = "/messages";
+      this.router.navigateByUrl("/messages")
+
     }
     else{
       this.username = '';
