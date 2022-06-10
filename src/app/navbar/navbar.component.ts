@@ -32,7 +32,7 @@ export class NavbarComponent implements OnInit {
     this.userService.logOut();
     sessionStorage.clear();
     //window.location.href = "/";
-    this.router.navigateByUrl("./login")
+    this.router.navigateByUrl("/login")
 
 
 

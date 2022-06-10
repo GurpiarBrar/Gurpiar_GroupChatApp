@@ -35,7 +35,8 @@ import { ChatComponent } from './chat/chat.component';
     MatIconModule,
     RouterModule.forRoot([
       {path: 'login', component: LoginComponent},
-      {path: 'messages', component: ChatComponent}
+      {path: 'messages', component: ChatComponent},
+      {path: '', component: LoginComponent}
     ]),
     MatListModule
   ],
