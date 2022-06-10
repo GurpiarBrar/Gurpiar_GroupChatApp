@@ -33,6 +33,10 @@ import { ChatComponent } from './chat/chat.component';
     MatInputModule,
     MatFormFieldModule,
     MatIconModule,
+    RouterModule.forRoot([
+      {path: 'login', component: LoginComponent},
+      {path: 'messages', component: ChatComponent}
+    ]),
     MatListModule
   ],
   providers: [],
