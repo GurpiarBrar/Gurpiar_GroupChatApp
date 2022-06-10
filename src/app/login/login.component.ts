@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { UsersService } from './users.service';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -13,7 +14,7 @@ export class LoginComponent implements OnInit {
   password: string ="";
   username: string ="";
 
-  constructor(private users: UsersService) { }
+  constructor(private users: UsersService, private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -25,7 +26,9 @@ export class LoginComponent implements OnInit {
 
     if(this.users.login(this.username, this.password)){
       sessionStorage.setItem('name', this.username)
-      window.location.href = "/messages";
+      //window.location.href = "/messages";
+      this.router.navigateByUrl("./messages")
+      
     }
     else{
       this.username = '';
